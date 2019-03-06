@@ -1,0 +1,259 @@
+aside{
+    margin-top: 10px;
+    width: 35%;
+    padding-left: 25px;
+    &:before{
+        content: "";
+        width: 15px;
+        height: 345px;
+        background-size: 15px 500px;
+        position: absolute;
+        background-image: url("../../img/background/decor_bg2.png");
+        background-repeat: no-repeat;
+        right: -15px;
+        bottom: 0;
+
+        @include laptops() {
+        
+            background-image:none;
+          }
+    }
+
+    &:after{
+                content: "";
+                width: 15px;
+                height: 500px;
+                background-size: 15px 500px;
+                position: absolute;
+                background-image: url("../../img/background/decor_bg.png");
+                background-repeat: no-repeat;
+                right: -15px;
+                top: -167px;
+
+                @include laptops() {
+        
+                    background-image:none;
+                  }
+            }
+            @include tablets() {
+                width: 100%;
+                padding-left: 0;
+              }
+}
+
+
+
+.aside__content{
+    display: flex;
+}
+.btn__list{
+    display: flex;
+    width: 100%;
+}
+
+#fashion.active{
+    position: relative;
+    &:before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid #ec098d;
+        border-bottom: 1px solid #ec098d;
+        top: 85%;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 44%;
+        background: #ec098d;
+    }
+}
+
+#cinema.active{
+    position: relative;
+    &:before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid #f78f1d;
+        border-bottom: 1px solid #f78f1d;
+        top: 85%;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 44%;
+        background: #f78f1d;
+    }
+}
+
+#tv.active{
+    position: relative;
+    &:before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid #00aedb;
+        border-bottom: 1px solid #00aedb;
+        top: 85%;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 44%;
+        background: #00aedb;
+    }
+}
+
+.aside__list.active{
+    display: block;
+    
+}
+
+.aside__list{
+    display: none;
+}
+
+.btn__item{
+    width: 30%;
+    height: 35px;
+    cursor: pointer;
+    &:last-child{
+        width: 40%;
+    }
+
+}
+
+.btn__item_fashion{
+    background-color: #ec098d;
+} 
+
+.btn__item_cinema{
+    background-color: #f78f1d;
+} 
+
+.btn__item_tv{
+    background-color: #00aedb;
+} 
+
+.aside__title{
+    background: url("../../img/background/aside_bg.png") no-repeat;
+    min-height: 36px;
+    max-height: 60px;
+    margin-bottom: 2px;
+   
+}
+
+// .menu__item-active{
+//     width: 100%;
+// }
+
+// .menu__item{
+//     width: 0;
+// }
+
+.btn__title{
+    color:  #ffffff;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 5px;
+
+  
+}
+
+.aside__desc{
+    margin-top: 15px;
+}
+
+.menu__title{
+    color:  #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 1%;
+    padding-left: 2%;
+    margin-bottom: 0;
+}
+
+.aside__item{
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #c9c9c9;
+
+    
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
+.aside__img{
+    
+    width: 85px;
+    height: 100px;
+    border: 1px solid #c9c9c9;
+    margin-right: 15px;
+    
+}
+
+.aside__img-pic{
+    // background: url("/src/img/content/img5.png") center center no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+.aside__description{
+    max-width: 240px;
+    @include tablets() {
+        max-width: 100%;
+      }
+}
+
+.aside__subtitle{
+    color:  #00aedb;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.aside__text{
+    color:  #494949;
+    font-size: 13px;
+    padding-bottom: 23px;
+    max-width: 222px;
+    @include tablets() {
+        max-width: 100%;
+      }
+}
+
+.aside__title_interest{
+    background-color: #5261ac;
+    margin-bottom: 0;
+}
+
+.guest__item{
+    display: flex;
+}
+
+.guest__item{
+    margin-top: 25px;
+}
+
+.guest__text{
+    color:  #494949;
+    font-size: 13px;
+    max-width: 218px;
+    @include tablets() {
+        max-width: 100%;
+      }
+}
+
+.guest__link{
+    color:  #8dd1ea;
+    font-size: 13px;
+}
+
+.guest__ava{
+    border: 1px solid #c9c9c9;
+    margin-right: 15px;
+}
+
+.guest__ava-pic{
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}

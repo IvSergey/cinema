@@ -1,0 +1,36 @@
+header.header
+  .header__content.container
+    .hamburger.header__menu
+      button.gamb__btn#gamb 
+      .header__navigation#navigation
+        ul.nav__list
+          li.nav__item.nav__item_main
+            a.nav__link(href="#") Главная
+          li.navi__item.nav__item_cinema
+            a.nav__link(href="#") Кино
+          li.nav__item.nav__item_store
+            a.nav__link(href="#") Магазин 
+          li.nav__item.nav__item_projects
+            a.nav__link(href="#") Проекты
+          li.nav__item.nav__item_news
+            a.nav__link(href="#") Новости
+          li.navi__item.nav__item_archive
+            a.nav__link(href="#") Архив
+          li.navi__item.nav__item_contacts
+            a.nav__link(href="#") Контакты
+    .header__logo
+      h1.header__title Эксперт
+    .search
+      input(type="text").search__input
+      button.search__btn Поиск
+    .socials
+      ul.socials__list
+        li.socials__item.socials__item_rss
+          a.socials__link.socials__link_rss(href="#")
+            img(src=require("../../img/icons/RSS.png"), alt="RSS").socials__img
+        li.socials__item.socials__item_fb
+          a.socials__link(href="#")
+            img(src=require("../../img/icons/fb.png"), alt="fb").socials__img
+        li.socials__item.socials__item_tw
+          a.socials__link(href="#")
+            img(src=require("../../img/icons/tw.png"), alt="tw").socials__img

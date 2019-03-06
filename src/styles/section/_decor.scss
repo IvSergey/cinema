@@ -1,0 +1,36 @@
+.decor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -30px;
+}
+
+.decor__date{
+    position: absolute;
+    left: -50px;
+    top: 13px;
+    @include laptops() {
+        
+        display:none;
+      }
+}
+
+.decor__day{
+    width: 70px;
+    height: 45px;
+    background-color: #f78f1d;
+    color:  #ebebeb;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.decor__month{
+    width: 70px;
+    height: 26px;
+    background-color: #00aedb;
+    color:  #ffffff;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+// .navigation{
+//     position: relative;
+// }
+
+.navigation__content{
+    padding-bottom: 18px;
+    @include tablets() {
+        display: none;
+      }
+}
+
+.navigation__list{
+    width: 100%;
+    height: 36px;
+    display: flex;
+    background-color: #898989;
+    
+}
+
+.navigation__item{
+    width: 107px;
+
+    &:last-child{
+        width: 126px;
+    }
+}
+
+
+
+.navigation__item_main, .navigation__item_projects{
+    background-color: #00aedb;
+}
+
+.navigation__item_cinema{
+    background-color: #8cc63f;
+}
+
+.navigation__store{
+    background-color: #5261ac;
+}
+
+.navigation__item_news{
+    background-color: #f78f1d;
+}
+
+.navigation__archive{
+    background-color: #ff0000;
+}
+
+.navigation__contacts{
+    background-color: #898989;
+}
+
+.navigation__link{
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+}
+
